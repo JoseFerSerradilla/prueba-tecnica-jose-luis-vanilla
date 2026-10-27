@@ -1,0 +1,42 @@
+/*
+ * Design tokens sacados directamente del inspector de Adobe XD (capas de
+ * CSS que me pasó Jose Luis): colores, tipografías, radios y sombras
+ * exactos, no aproximados.
+ */
+:root {
+  --color-bg-gradient-start: #a1c4fd;
+  --color-bg-gradient-end: #c2e9fb;
+  --color-card-bg: #ffffff;
+  --color-text: #333333;
+  --color-text-muted: #666666;
+  --color-placeholder: #999999;
+  --color-primary: #324bff;
+  --color-primary-hover: #2638cc;
+  --color-list-bg: #f7f7f7;
+  --color-list-border: #cccccc;
+  --color-item-hover-bg: #ececec;
+  --color-item-selected-bg: var(--color-primary);
+  --color-item-selected-text: #ffffff;
+
+  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-title: 40px;
+  --line-height-title: 44px;
+  --font-size-body: 18px;
+  --line-height-body: 26px;
+  --font-size-button: 16px;
+  --line-height-button: 22px;
+
+  --radius-card: 20px;
+  --radius-pill: 999px;
+  --radius-input: 6px;
+
+  --shadow-card: 0 5px 12px rgba(0, 0, 0, 0.12);
+  --shadow-modal: 0 10px 24px rgba(0, 0, 0, 0.12);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import './tokens.css';
+@import '../ui/Button/Button.css';
+@import '../ui/IconButton/IconButton.css';
+@import '../ui/TextField/TextField.css';
+@import '../ui/Modal/Modal.css';
+@import '../ui/ListBox/ListBox.css';
+@import '../ui/LanguageSwitcher/LanguageSwitcher.css';
+@import '../features/text-list/TextListFeature.css';
+@import '../features/add-item/AddItemFeature.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-gradient-start) 0%,
+    var(--color-bg-gradient-end) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+}
+
+button {
+  font-family: inherit;
+}
