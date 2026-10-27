@@ -10,8 +10,8 @@ export class ListRepository {
     throw new Error('ListRepository.load() no implementado');
   }
 
-  /** @param {import('../../domain/textList.js').TextList} list */
-  save(list) {
+  /** @param {import('../../domain/textList.js').TextList} _list */
+  save(_list) {
     throw new Error('ListRepository.save() no implementado');
   }
 }
