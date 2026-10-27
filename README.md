@@ -37,7 +37,9 @@ npm run test:e2e
 ```
 
 Hay un workflow de GitHub Actions (`.github/workflows/ci.yml`) que corre
-`selfcheck` y el E2E en cada push.
+`selfcheck` y el E2E en cada push. En local, Husky añade dos hooks de
+git: `pre-commit` (`npm run format:check`, con Prettier) y `commit-msg`
+(valida con `commitlint` que el mensaje siga Conventional Commits).
 
 ## Arquitectura
 
@@ -80,8 +82,9 @@ como deseables en el enunciado, junto con algunos detalles adicionales:
 - Historial de deshacer apilable, no limitado a un único paso.
 - Mensaje de estado vacío cuando la lista no tiene elementos.
 - Accesibilidad básica: roles `listbox`/`option`, `aria-selected`,
-  `aria-label` en el botón de deshacer, cierre del modal con Escape y
-  foco automático al abrirlo.
+  `aria-label` en el botón de deshacer, cierre del modal con Escape, foco
+  automático al abrirlo y los ítems de la lista seleccionables también
+  por teclado (`Tab` para enfocarlos, `Enter`/`Espacio` para elegirlos).
 
 ## Gestión de errores
 
@@ -121,7 +124,10 @@ más que suficientes, y evita una dependencia que aquí no se justifica.
 
 ## Diseño
 
-El maquetado sigue las especificaciones extraídas del inspector de Adobe
-XD: colores exactos (`#324BFF` como color primario), tipografía
-Montserrat con los tamaños y pesos indicados, radios y sombras de
-card/modal, y el degradado de fondo.
+Fuente del diseño:
+[xd.adobe.com/view/ea696dd0-8781-4460-8720-36deb2d19b2a-bf3a/specs](https://xd.adobe.com/view/ea696dd0-8781-4460-8720-36deb2d19b2a-bf3a/specs/)
+(enlace del propio enunciado). El maquetado sigue las especificaciones
+extraídas del inspector de Adobe XD de ese prototipo: colores exactos
+(`#324BFF` como color primario), tipografía Montserrat con los tamaños y
+pesos indicados, radios y sombras de card/modal, y el degradado de
+fondo.
