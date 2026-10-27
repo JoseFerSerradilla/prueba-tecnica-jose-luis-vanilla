@@ -1,0 +1,20 @@
+.text-field {
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background: var(--color-list-bg);
+  border: 1px solid var(--color-list-border);
+  border-radius: var(--radius-input);
+  padding: var(--space-4);
+}
+
+.text-field::placeholder {
+  color: var(--color-placeholder);
+}
+
+.text-field:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
