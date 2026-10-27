@@ -7,9 +7,16 @@
   "scripts": {
     "start": "npx serve .",
     "selfcheck": "node scripts/selfcheck.mjs",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@playwright/test": "^1.64.1"
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@playwright/test": "^1.64.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.10"
   }
 }
