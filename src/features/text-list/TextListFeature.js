@@ -29,7 +29,9 @@ export function renderTextListCard(state, actions, t) {
 
   const header = document.createElement('div');
   header.className = 'text-list-card__header';
-  header.appendChild(createLanguageSwitcher({ locale: state.locale, onChange: actions.onChangeLocale }));
+  header.appendChild(
+    createLanguageSwitcher({ locale: state.locale, onChange: actions.onChangeLocale }),
+  );
 
   const title = document.createElement('h1');
   title.className = 'text-list-card__title';
@@ -51,7 +53,11 @@ export function renderTextListCard(state, actions, t) {
 
   const leftActions = document.createElement('div');
   leftActions.className = 'text-list-card__toolbar-left';
-  const undoButton = createIconButton({ label: t('undo'), onClick: actions.onUndo, disabled: !state.canUndo });
+  const undoButton = createIconButton({
+    label: t('undo'),
+    onClick: actions.onUndo,
+    disabled: !state.canUndo,
+  });
   const deleteButton = createButton({
     label: t('delete'),
     variant: 'outline',
@@ -60,7 +66,11 @@ export function renderTextListCard(state, actions, t) {
   });
   leftActions.append(undoButton, deleteButton);
 
-  const addButton = createButton({ label: t('add'), variant: 'primary', onClick: actions.onOpenAddModal });
+  const addButton = createButton({
+    label: t('add'),
+    variant: 'primary',
+    onClick: actions.onOpenAddModal,
+  });
 
   toolbar.append(leftActions, addButton);
   card.append(header, title, description, listBox, toolbar);

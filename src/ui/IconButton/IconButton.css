@@ -9,7 +9,9 @@
   background: transparent;
   color: var(--color-primary);
   cursor: pointer;
-  transition: background-color 0.15s ease, opacity 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    opacity 0.15s ease;
 }
 
 .icon-btn:hover:not(:disabled) {

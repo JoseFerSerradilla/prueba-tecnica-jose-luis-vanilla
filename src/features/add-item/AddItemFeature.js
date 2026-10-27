@@ -64,7 +64,11 @@ export function openAddItemModal({ onSubmit, t }) {
   }
 
   const addButton = createButton({ label: t('add'), variant: 'primary', onClick: submit });
-  const cancelButton = createButton({ label: t('cancel'), variant: 'outline', onClick: () => modal.close() });
+  const cancelButton = createButton({
+    label: t('cancel'),
+    variant: 'outline',
+    onClick: () => modal.close(),
+  });
 
   actions.append(addButton, cancelButton);
   wrapper.append(title, field, error, actions);

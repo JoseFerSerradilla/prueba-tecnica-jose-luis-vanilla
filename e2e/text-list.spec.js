@@ -39,7 +39,9 @@ test.describe('Gestión de la lista de texto', () => {
     await page.locator('#root').getByRole('button', { name: 'Add', exact: true }).click();
     await page.getByPlaceholder('Type the text here...').fill('item 1');
     await page.getByRole('dialog').getByRole('button', { name: 'Add', exact: true }).click();
-    await expect(page.getByText('An item with that text already exists in the list.')).toBeVisible();
+    await expect(
+      page.getByText('An item with that text already exists in the list.'),
+    ).toBeVisible();
     await expect(page.getByRole('option')).toHaveCount(1);
   });
 
