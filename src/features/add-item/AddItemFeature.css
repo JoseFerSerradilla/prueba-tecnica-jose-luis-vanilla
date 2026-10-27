@@ -1,0 +1,19 @@
+.add-item-form__title {
+  margin: 0 0 var(--space-4);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.add-item-form__error {
+  margin: var(--space-2) 0 0;
+  color: #d33b3b;
+  font-size: 0.875rem;
+}
+
+.add-item-form__actions {
+  margin-top: var(--space-5);
+  display: flex;
+  gap: var(--space-3);
+}
