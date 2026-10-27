@@ -14,7 +14,8 @@
 }
 
 html,
-body {
+body,
+#root {
   height: 100%;
 }
 
@@ -27,6 +28,10 @@ body {
     var(--color-bg-gradient-start) 0%,
     var(--color-bg-gradient-end) 100%
   );
+  min-height: 100vh;
+}
+
+#root {
   min-height: 100vh;
   display: flex;
   align-items: center;
